@@ -7,12 +7,17 @@ import {
 } from "react-router-dom";
 import App from "./App.tsx";
 import {SignUp} from "./pages/sign-up.tsx";
+import {Main} from "./pages/main.tsx";
 
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <App/>,
+    },
+    {
+        path: "/home",
+        element: <Main/>,
     },
     {
         path: "/sign-up",
